@@ -1,22 +1,11 @@
-function copyNumber(){
+function copyNumber() {
 
-    const number =
-    document.getElementById("number").innerText;
+```
+const number = document.getElementById("number").innerText;
 
-    navigator.clipboard.writeText(number);
+navigator.clipboard.writeText(number);
 
-    alert("Number copied");
-}
+alert("Number copied successfully!");
+```
 
-function verifyTransaction(){
-
-    const trx =
-    document.getElementById("trx").value.trim();
-
-    if(trx === ""){
-        alert("Please enter Transaction ID");
-        return;
-    }
-
-    alert("Transaction Submitted: " + trx);
 }
